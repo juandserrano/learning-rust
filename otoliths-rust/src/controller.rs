@@ -1,11 +1,3 @@
-use std::{
-    env::VarError,
-    io,
-    num::{IntErrorKind, ParseIntError},
-    os,
-    str::Utf8Error,
-};
-
 use crate::{
     model::Record,
     view::{self, *},
@@ -98,7 +90,7 @@ pub fn get_user_input() -> u32 {
         .expect("Error getting user input");
     let input: u32 = match input.trim().parse() {
         Ok(num) => num,
-        Err(e) => 666,
+        Err(_e) => 666,
     };
     input
 }

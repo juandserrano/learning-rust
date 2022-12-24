@@ -28,21 +28,21 @@ pub fn print_display_record_menu() {
 }
 
 // PrintSortMenu prints the sorting by menu.
-pub fn print_sort_menu() {
-	println!();
-	println!("CST8333 Project 4 by Juan Diego Serrano");
-	println!();
-	println!("H;ow do you want to sort by: ");
-	println!("1;. Source.");
-	println!("2;. Latin Name.");
-	println!("3;. English Name.");
-	println!("4;. French Name.");
-	println!("5;. Year.");
-	println!("6;. Month.");
-	println!("7;. Number of Otoliths.");
-	println!() ;
-	println!("0. Quit");
-}
+// pub fn print_sort_menu() {
+// 	println!();
+// 	println!("CST8333 Project 4 by Juan Diego Serrano");
+// 	println!();
+// 	println!("H;ow do you want to sort by: ");
+// 	println!("1;. Source.");
+// 	println!("2;. Latin Name.");
+// 	println!("3;. English Name.");
+// 	println!("4;. French Name.");
+// 	println!("5;. Year.");
+// 	println!("6;. Month.");
+// 	println!("7;. Number of Otoliths.");
+// 	println!() ;
+// 	println!("0. Quit");
+// }
 
 // PrintCreateRecordMenu prints the create record menu.
 pub fn print_create_record_menu() {
