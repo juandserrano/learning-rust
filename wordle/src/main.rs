@@ -14,6 +14,6 @@ fn main() {
         eprintln!("Problem getting user input: {}", err);
         process::exit(1);
     });
-    println!("{}", check(&word, &input));
+    println!("{}", check_word(&word, &input));
 
 }

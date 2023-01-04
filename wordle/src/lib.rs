@@ -3,7 +3,26 @@ use std::error::Error;
 use rand::prelude::*;
 use std::io;
 
-pub fn check(word: &String, letter: &String) -> bool {
+pub fn check_word(word: &String, input_word: &String) -> String {
+    let mut temp_word = String::new(); 
+    let mut letter_count: u8 = 0;
+    for (idxw, w) in word.chars().enumerate() {
+        for (idxi, i) in input_word.chars().enumerate() {
+            if i == w && idxi == idxw {
+                temp_word.push_str("o");
+                letter_count += 1;
+            } else if idxi == idxw {
+                temp_word.push_str("-");
+            } else if i == w {
+                letter_count += 1;
+            }
+        }
+    }
+    temp_word = format!("{}     {} correct letters.", temp_word, letter_count);
+    temp_word
+}
+
+pub fn check_letter(word: &String, letter: &String) -> bool {
     word.contains(letter) 
 }
 
